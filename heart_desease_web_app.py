@@ -9,7 +9,7 @@ import numpy as np
 import pickle
 import streamlit as st
 #import pandas as pd
-from streamlit_option_menu import option_menu
+#from streamlit_option_menu import option_menu
 
 #df = pd.read_csv('C:/Users/User/Downloads/heart.csv')  
 
@@ -18,10 +18,8 @@ from streamlit_option_menu import option_menu
 
 #print("Selected Feature Names:", feature_names.tolist())
 loaded_model=pickle.load(open('deployment_model/heart_disease_model.sav','rb'))
-with st.sidebar:
-    selected = option_menu('MULTIPLE DESEASE PREDICTION',
-                         ['heart desease prediction','diabetes prediction'],icons=['heart','activity'],
-                         default_index=0)
+#with st.sidebar:
+selected ='heart desease prediction'
     
 def heart(input_list):
     
