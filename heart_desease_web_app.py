@@ -17,7 +17,7 @@ import streamlit as st
 #feature_names = df.drop(columns=["target"]).columns  # Replace "target" with actual target column name
 
 #print("Selected Feature Names:", feature_names.tolist())
-loaded_model=pickle.load(open('deployment_model/heart_disease_model.sav','rb'))
+loaded_model=pickle.load(open('heart_disease_model.sav','rb'))
 #with st.sidebar:
 selected ='heart desease prediction'
     
