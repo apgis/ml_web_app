@@ -8,15 +8,15 @@ Created on Mon Mar  3 23:36:43 2025
 import numpy as np
 import pickle
 import streamlit as st
-import pandas as pd
+
 from streamlit_option_menu import option_menu
 
-df = pd.read_csv('C:/Users/User/Downloads/heart.csv')  
+#df = pd.read_csv('C:/Users/User/Downloads/heart.csv')  
 
 # Extract selected feature names (assuming all columns except the target are features)
-feature_names = df.drop(columns=["target"]).columns  # Replace "target" with actual target column name
+#feature_names = df.drop(columns=["target"]).columns  # Replace "target" with actual target column name
 
-print("Selected Feature Names:", feature_names.tolist())
+#print("Selected Feature Names:", feature_names.tolist())
 loaded_model=pickle.load(open('heart_disease_model.sav','rb'))
 with st.sidebar:
     selected = option_menu('MULTIPLE DESEASE PREDICTION',
